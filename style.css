@@ -1,0 +1,146 @@
+body {
+ margin:0;
+ padding:0;
+}
+
+/********************
+***ecran accueil***
+*********************/
+section {
+  height:10vh;
+  width:100%;
+  background-color:  ;
+  background-size: auto;
+}
+
+header {
+  height:160vh;
+    width:100%;
+  background-image:url(images/Avion.jpg);
+  background-size: cover;
+}
+
+.mon-titre{
+ position:relative;
+ width:90%;
+ top:45vh;
+ margin: auto;
+ background-color: rgba(0, 0, 0, 0.6);
+ text-align:center;
+}
+
+header h1 {
+font-size:35px;
+  padding:30px;
+}
+
+
+nav {position:fixed;
+  top:0;
+  width:100%;
+  height:100px!important;
+  background-color:#ef9a9a!important;
+  z-index:99;}
+
+nav ul {
+list-style: none;
+text-align: center;
+
+}
+
+#papiers {
+color: white;
+font-size: 15px;
+font-family: 'Aldrich', sans-serif;
+}
+
+
+.top{margin-top: 1%;}
+
+a {text-decoration: none;
+color: #ffff00;
+
+font-size: 22px!important;
+font-family: 'Aldrich', sans-serif;
+}
+
+
+a:hover {
+color: #69f0ae;
+}
+
+
+nav li {
+display: inline;
+float:right!important;
+}
+
+
+#logo img{
+  width: 5%;
+  float: left;
+  padding-top: 0.5%!important;
+  padding-left: 0.5%;
+}
+#myBtn {
+  position: fixed;
+  width:50px;
+  height:50px;
+  float:right;
+  z-index:99;
+  right:15px;
+  margin-left:auto;
+  margin-right: auto;
+  bottom: 15px;
+}
+
+.titre {
+  font-family: 'Aldrich', sans-serif;
+  color:black;
+  text-align: center;
+}
+
+
+h1 {font-size: 50px;
+  font-weight: bold;
+font-family: 'Raleway', cursive;
+color:white;}
+
+h4 {
+  color:white;
+  font-family: 'Aldrich', sans-serif;}
+
+#papiers:hover {color:#69f0ae;}
+
+p {
+  color:black;
+  font-family: 'Raleway', sans-serif;
+  padding: 0.5%;
+}
+
+footer {
+  position:absolute;
+  margin-bottom: 0;
+  width:100%;
+  height:28%;
+  background-color:black;
+}
+
+aside {
+  position:absolute;
+  bottom: 0;
+  width:100%;
+  height:24%;
+  background-color:black;}
+
+#entreprise {margin-top:5%!important; padding-left:0.5%;}
+
+#reseaux-sociaux{
+margin-top: -5%;
+text-align:center!important;
+}
+
+#reseaux-sociaux img {
+  max-width: 50%;
+  max-height: 50px;
+}
