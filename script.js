@@ -1,3 +1,19 @@
+//Fonction qui prend en paramètre 'new val', selection de l'iD qui
+//se trouve en HTML, lorsque je bouge le curseur le prix max s'affiche
+//dans le fichier html quand la fonction est appelé,
+//elle a pour (paramètre) 'this.value'
+//Lorque le curseur est bougé elle prend automatique sa valeur
+//Newval correspond au curseur
+function AfficheRange2(newVal){
+  document.getElementById("valeur").innerHTML="Prix max="+newVal+"€";
+};
+
+
+//function myFunction() {
+//     document.querySelector('val').style.fontfamily = 'Raleway';
+//};
+
+
 const vols = [{
   destination: 'Martinique',
   date_depart: '01/25/2019',

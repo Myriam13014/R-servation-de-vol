@@ -10,7 +10,7 @@
     <title></title>
   </head>
   <body>
-    <section>
+    <article>
         <nav>
           <a id="myBtn" href="#"> <img src="https://img.icons8.com/color/48/ffffff/chevron-up.png" alt="Flèche top"> </a>
           <div id="menu">
@@ -25,38 +25,51 @@
 
         </nav>
 
-      </section>
+      </article>
 
 <br><br><br>
+      <div class="Vols">
+
+
+        <!-- permet de relier le bouton à l'autre page html -->
+        <input type="button" target="_blank" onclick='window.location.href="web.html"' target="_blank"; id="bouton" value="Afficher tous les vols" >
+
+      </div>
+
+      <div class="formulaire">
+
       <fieldset id="section1">
+
 
           <form method="post" action="validation.html">
           <label for="départ"> </label>
           <input type="text"     name="départ" id="départ" placeholder="Départ: aéroport, lieu..." autocomplete="on"  required> </input><br><br>
 
           <label for="arrivée"> </label>
-          <input type="text"     name="arrivée" id="arrivée" placeholder="Arrivée:aéroport, lieu..." autocomplete="on" required> </input><br><br>
+          <input type="text"     name="arrivée" id="arrivée" placeholder="Arrivée: aéroport, lieu..." autocomplete="on" required> </input><br><br>
 
           <label for="date"> </label>
-          <input type="date"     name="date" id="date" placeholder="Date de Naissance" autocomplete="on" required> </input><br><br>
+          <input type="date" id="date" name="date placeholder="Date de Naissance" autocomplete="on" required> </input><br><br>
 
-          <label for="mdp"> </label>
-          <input type="password"  name="mdp" id="mdp" placeholder="Mot de passe" minlength="8" required> </input>
-          <br><br>
+          <!-- permet de faire la fourchette de prix -->
+          <!-- Lorsqu'un evenement est modifié-->
+          <!--  se déclenche lorsque que le click qui a été pressée est relâchée -->
+          <input type="range" value="100" min="0" max="2000" step="5"
+            onchange="AfficheRange2(this.value)"
+            onkeyup="AfficheRange2(this.value)">
+            <span id="valeur"><p class="val"> Valeur=100 </p></span>
 
-          <label for="mdp1"> </label>
-          <input type="password" name="mdp1" id="mdp1" placeholder="Mot de passe à confirmer" minlength="8" required></input>
-          <input type="button" value='' title="Afficher les mots de passe" onclick=toto()></input><br><br><br>
 
-
-          <input type="submit" id="bouton" value="envoyer">
+          <input type="submit" id="bouton" value="Réservez">
           </form>
 
-          </fieldset>
 
 
+          </fieldset><br>
+          </div>
 
-      <aside>
+
+      <footer>
         <div id="entreprise">
           <a href="cgv.pdf"> <h4 id="papiers">CGV</h4></a> <a href="ML.pdf"> <h4 id="papiers">ML</h4></a>
         </div>
@@ -67,7 +80,7 @@
           <a href=""><img src="https://img.icons8.com/color/50/4a90e2/linkedin-circled.png" alt="Linkedin" > </a>
           <a href=""><img src="https://img.icons8.com/color/50/4a90e2/instagram-new.png" alt="Instagram" > </a>
           </div>
-      </aside>
+      </footer>
   <script src="script.js"> </script>
   </body>
 </html>
